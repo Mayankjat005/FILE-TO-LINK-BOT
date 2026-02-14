@@ -3,15 +3,15 @@ from Script import script
 
 # 🚀 __Bot Configuration__
 SESSION = environ.get('SESSION', 'RexBots')  # Session name
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '23159366'))
+API_HASH = environ.get('API_HASH', '4623dd30dd1303bddb729eb0862262d9')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # 👑 __Owner & Admins__
-ADMINS = [int(i) for i in environ.get('ADMINS', '').split()]
-AUTH_CHANNEL = [int(i) for i in environ.get("AUTH_CHANNEL", "").split()]
-OWNER_USERNAME = environ.get("OWNER_USERNAME", 'CantarellaBots')
-BOT_USERNAME = environ.get("BOT_USERNAME", 'CantarellaBots')
+ADMINS = [int(i) for i in environ.get('ADMINS', '1785450012').split()]
+AUTH_CHANNEL = [int(i) for i in environ.get("AUTH_CHANNEL", "-1003802896275").split()]
+OWNER_USERNAME = environ.get("OWNER_USERNAME", 'f9devs')
+BOT_USERNAME = environ.get("BOT_USERNAME", '@Url_Uploader9_RoBot')
 
 # 🔗 __Channel & Support Links__
 CHANNEL = environ.get('CHANNEL', 'https://t.me/cantarellabots')
@@ -20,15 +20,15 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/cantarellabots')
 HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/cantarellabots')
 
 # 📢 __Log Channels__
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", ''))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-'))
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", ''))
-VERIFIED_LOG = int(environ.get('VERIFIED_LOG', ''))
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", ""))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1003802896275'))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1003802896275'))
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", '-1003802896275'))
+VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1003802896275'))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1003802896275"))
 
 # ✅ __Feature Toggles__
 VERIFY = False  # Enable user verification
-FSUB = environ.get("FSUB", True)  # Force Subscribe
+FSUB = environ.get("FSUB", False)  # Force Subscribe
 ENABLE_LIMIT = environ.get("ENABLE_LIMIT", True)
 BATCH_VERIFY = False
 IS_SHORTLINK = False
@@ -78,7 +78,7 @@ NO_PORT = str(environ.get("NO_PORT", "true")).lower() in ("true", "1", "yes")
 HAS_SSL = str(environ.get("HAS_SSL", "true")).lower() in ("true", "1", "yes")
 
 # URL Generation
-BIND_ADDRESS = environ.get("WEB_SERVER_BIND_ADDRESS", "")   ##without https:// paste the base url here 
+BIND_ADDRESS = environ.get("WEB_SERVER_BIND_ADDRESS", "15.134.208.118")   ##without https:// paste the base url here 
 FQDN = environ.get("FQDN", BIND_ADDRESS)
 
 if not FQDN.startswith("http"):
